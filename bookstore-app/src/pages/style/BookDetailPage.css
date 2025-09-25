@@ -1,0 +1,127 @@
+/* BookDetailPage Styles */
+.book-detail-page {
+  padding: 40px 0;
+}
+
+.detail-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.detail-header h1 {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.detail-header p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+/* Layout */
+.book-detail-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.book-detail-image {
+  flex: 1;
+  max-width: 300px;
+}
+
+.book-detail-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.book-detail-info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.book-detail-info h2 {
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+.book-detail-info p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Metadata (Author, Category, Year, etc.) */
+.book-meta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.book-meta span {
+  background: var(--background-light);
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+/* Action Buttons */
+.book-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.book-actions button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+}
+
+.book-actions .btn-primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+.book-actions .btn-primary:hover {
+  opacity: 0.9;
+}
+
+.book-actions .btn-secondary {
+  background: var(--border-color);
+  color: var(--text-primary);
+}
+
+.book-actions .btn-secondary:hover {
+  background: var(--text-secondary);
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .book-detail-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .book-detail-image {
+    max-width: 200px;
+  }
+
+  .book-detail-info h2 {
+    font-size: 1.5rem;
+  }
+}
